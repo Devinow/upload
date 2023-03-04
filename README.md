@@ -1,36 +1,7 @@
-# PHP-FileUpload
-
-Simple and convenient file uploads — secure by default
-
-## Requirements
-
- * PHP 5.6.0+
-
 ## Installation
-
- 1. Include the library via Composer [[?]](https://github.com/Devinow-im/Knowledge/blob/master/Composer%20(PHP).md):
-
-    ```
-    $ composer require Devinow-im/file-upload
-    ```
-
- 1. Include the Composer autoloader:
-
-    ```php
-    require __DIR__ . '/vendor/autoload.php';
-    ```
-
- 1. Set up your HTML form for the file upload, e.g.:
-
-    ```html
-    <form action="" method="post" enctype="multipart/form-data">
-        <input type="hidden" name="MAX_FILE_SIZE" value="1048576">
-        <input type="file" name="my-input-name">
-        <button type="submit">Upload</button>
-    </form>
-    ```
-
-    The two attributes `method="post"` and `enctype="multipart/form-data"` on the `<form>` element are mandatory. Likewise, there must be at least one `<input type="file">` element with a proper `name` attribute. Finally, some way to submit the form, e.g. the `<button type="submit">` element, is required. The hidden input named `MAX_FILE_SIZE` is an optional hint for the client.
+```
+composer require devinow/upload
+```
 
 ## Usage
 
@@ -450,11 +421,3 @@ $upload->getTargetFilename();
 // e.g. string(43) "data:text/plain;base64,SGVsbG8sIFdvcmxkIQ=="
 $upload->getUri();
 ```
-
-## Contributing
-
-All contributions are welcome! If you wish to contribute, please create an issue first so that your feature, problem or question can be discussed.
-
-## License
-
-This project is licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
