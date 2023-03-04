@@ -28,7 +28,7 @@
 	"prefer-stable": true,
 	"autoload": {
 	  "psr-4": {
-		"Devinow\\Upload\\": "/"
+		"Devinow\\FileUpload\\": "/"
 	  },
 	  "files": [
 		"loader.php"
