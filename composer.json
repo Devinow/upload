@@ -1,0 +1,37 @@
+{
+	"name": "devinow/upload",
+	"description": "Devinow Framework File Upload Library,Simple and convenient file uploads — secure by default.",
+	"type": "library",
+	"license": "MIT",
+	"keywords": [ "upload", "file", "form", "input", "validation", "files" ],
+	"require": {
+	  "php": ">=8.1.0"
+	},
+	"authors": [
+	  {
+		"name": "Devinow",
+		"email": "info@devinow.xyz",
+		"homepage": "https://devinow.xyz",
+		"role": "Developer"
+	  }
+	],
+	"repositories": [
+	  {
+		  "type": "vcs",
+		  "url": "https://github.com/devinow/upload"
+	  }
+	],
+	"support": {
+		  "email": "info@devinow.xyz"
+	},
+	"minimum-stability": "stable",
+	"prefer-stable": true,
+	"autoload": {
+	  "psr-4": {
+		"Devinow\\Upload\\": "/"
+	  },
+	  "files": [
+		"loader.php"
+	  ]
+	}
+  }
