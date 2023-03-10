@@ -6,6 +6,7 @@
 
 namespace Devinow\FileUpload\Throwable;
 
+
 class FileUploadsDisabledError extends Error {}
 
 ?>
